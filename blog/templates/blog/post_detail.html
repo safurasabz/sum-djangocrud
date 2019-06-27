@@ -1,0 +1,6 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1> {{ object.title }}</h1>
+    <p> By {{ object.author }} on {{ object.date_posted|date:"F d, Y" }}</p>
+        <p>{{ object.content }}</p>
+{% endblock content %}
